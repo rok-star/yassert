@@ -1,4 +1,4 @@
-# Yassert
+# Yassert ✅
 
 Yet another assertion module for JavaScript (Node and Browser).
 
