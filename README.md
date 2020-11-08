@@ -46,9 +46,9 @@ You can also specify additional info:
 const { assert } = require('yassert');
 
 assert(data, 'Input data').required().object().hasProperty('username')
-												.hasProperty('password')
-												.hasProperty('email')
-												.hasProperty('age');
+                                                .hasProperty('password')
+                                                .hasProperty('email')
+                                                .hasProperty('age');
 
 assert(data.username, 'Input "username"').required().string().notEmpty();
 assert(data.password, 'Input "password"').required().string().notEmpty();
@@ -60,15 +60,15 @@ Also some extra functions are available:
 
 ```javascript
 const {
-	isPrototypeOf,
-	isPromise,
-	isObject,
-	isArray,
-	isFunction,
-	isString,
-	isNumber,
-	isDate,
-	isBool,
-	assert
+    isPrototypeOf,
+    isPromise,
+    isObject,
+    isArray,
+    isFunction,
+    isString,
+    isNumber,
+    isDate,
+    isBool,
+    assert
 } = require('yassert');
 ```
