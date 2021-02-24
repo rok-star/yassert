@@ -148,5 +148,7 @@ module.exports = {
 	isNumber,
 	isDate,
 	isBool,
+	isNull,
+	isSet,
 	assert
 };
