@@ -50,6 +50,7 @@ export function isString(value: any): boolean;
 export function isNumber(value: any): boolean;
 export function isDate(value: any): boolean;
 export function isBool(value: any): boolean;
+export function isNull(value: any): boolean;
 export function assert(value: any, description?: any): {
     optional: () => ITypeAssert;
     required: () => ITypeAssert;
