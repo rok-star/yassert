@@ -69,6 +69,8 @@ const {
     isNumber,
     isDate,
     isBool,
+    isNull,
+    isSet,
     assert
 } = require('yassert');
 ```
