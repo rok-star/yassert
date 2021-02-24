@@ -16,6 +16,7 @@ const isNumber = value => ((toString.call(value) === '[object Number]') && isFin
 const isDate = value => (toString.call(value) === '[object Date]');
 const isBool = value => ((value === true) || (value === false));
 const isNull = value => (value === null || value === undefined);
+const isSet = value => (value !== null && value !== undefined);
 const assert = (value, description = null) => {
 	const valueAssert = {
 		equals(rvalue) {
