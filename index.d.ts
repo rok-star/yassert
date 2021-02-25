@@ -4,8 +4,8 @@ declare interface IValueAssert {
 }
 
 declare interface IObjectAssert extends IValueAssert {
-    hasOwnProperty(name: string): IObjectAssert,
-    hasProperty(name: string): IObjectAssert,
+    hasOwnProperty(name: string | string[]): IObjectAssert,
+    hasProperty(name: string | string[]): IObjectAssert,
     prototypeOf(proto: any): IObjectAssert
 }
 
