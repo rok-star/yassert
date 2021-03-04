@@ -2,12 +2,6 @@
 
 Yet another assertion module for JavaScript (Node and Browser).
 
-# Installation
-
-```
-npm install yassert
-```
-
 # Usage
 
 Basic usage:
@@ -56,6 +50,15 @@ assert(data.email, 'Input "email"').optional().string().notEmpty();
 assert(data.age, 'Input "age"').optional().number().inRange(1, 200);
 ```
 
+Typescript:
+```javascript
+import { required } from 'yassert'
+
+data?.username // (property) name: string | undefined
+const username = required(data?.username, '"username" is required');
+username // const username: string
+```
+
 Also some extra functions are available:
 
 ```javascript
@@ -71,6 +74,7 @@ const {
     isBool,
     isNull,
     isSet,
-    assert
+    assert,
+    required
 } = require('yassert');
 ```
