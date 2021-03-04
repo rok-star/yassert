@@ -138,6 +138,11 @@ const assert = (value, description = null) => {
 	}
 }
 
+const required = (value, description = null) => {
+	assert(value, description).required();
+	return value;
+}
+
 module.exports = {
 	isPrototypeOf,
 	isPromise,
@@ -150,5 +155,6 @@ module.exports = {
 	isBool,
 	isNull,
 	isSet,
-	assert
+	assert,
+	required
 };

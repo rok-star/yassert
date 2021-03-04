@@ -56,3 +56,4 @@ export function assert(value: any, description?: any): {
     optional: () => ITypeAssert;
     required: () => ITypeAssert;
 };
+export function required<T>(value: T | null | undefined, description?: string): NonNullable<T>;
