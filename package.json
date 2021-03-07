@@ -1,6 +1,6 @@
 {
   "name": "yassert",
-  "version": "0.0.11",
+  "version": "0.0.13",
   "description": "JavaScript awesome yet another assertion module",
   "main": "index.js",
   "scripts": {

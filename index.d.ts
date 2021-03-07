@@ -52,7 +52,8 @@ export function isDate(value: any): boolean;
 export function isBool(value: any): boolean;
 export function isNull(value: any): boolean;
 export function isSet<T>(value: T): value is NonNullable<T>;
-export function assert(value: any, description?: any): {
+export function ifNull<T>(value: any, value2: T): T;
+export function assert(value: any, description?: string): {
     optional: () => ITypeAssert;
     required: () => ITypeAssert;
 };

@@ -143,6 +143,8 @@ const required = (value, description = null) => {
 	return value;
 }
 
+const ifNull = (value, value2) => isNull(value) ? value2 : value;
+
 module.exports = {
 	isPrototypeOf,
 	isPromise,
@@ -155,6 +157,7 @@ module.exports = {
 	isBool,
 	isNull,
 	isSet,
+	ifNull,
 	assert,
 	required
 };
